@@ -1,0 +1,153 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`SignIn Component SHOULD render match snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-row h-screen"
+  >
+    <div
+      class="w-1/2 p-10 pt-20 space-y-6 place-content-center"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/logo.svg"
+          style="color: transparent;"
+          width="150"
+        />
+      </a>
+      <div>
+        Back
+      </div>
+      <div
+        class="text-6xl font-semibold"
+      >
+        Welcome back!
+      </div>
+      <div>
+        Welcome back to Loopedin. Enter your details below to sign in.
+      </div>
+      <input
+        class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12"
+        placeholder="Email Address"
+      />
+      <input
+        class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12"
+        placeholder="Password"
+      />
+      <div
+        class="flex flex-row place-content-between"
+      >
+        <div>
+          Remember me
+        </div>
+        <div>
+          Forgot Password?
+        </div>
+      </div>
+      <button
+        class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white w-full"
+      >
+        Sign In
+      </button>
+    </div>
+    <div
+      class="w-1/2 place-content-center"
+    >
+      <img
+        alt="signInImage"
+        data-nimg="1"
+        decoding="async"
+        height="2000"
+        loading="lazy"
+        src="/_next/image?url=%2Fsign-in.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fsign-in.png&w=2048&q=75 1x, /_next/image?url=%2Fsign-in.png&w=3840&q=75 2x"
+        style="color: transparent;"
+        width="2000"
+      />
+    </div>
+  </div>
+</div>
+`;
+
+exports[`SignIn page SHOULD render match snapshot 1`] = `
+<div>
+  <div
+    class="flex flex-row h-screen"
+  >
+    <div
+      class="w-1/2 p-10 pt-20 space-y-6 place-content-center"
+    >
+      <a
+        href="/"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/logo.svg"
+          style="color: transparent;"
+          width="150"
+        />
+      </a>
+      <div>
+        Back
+      </div>
+      <div
+        class="text-6xl font-semibold"
+      >
+        Welcome back!
+      </div>
+      <div>
+        Welcome back to Loopedin. Enter your details below to sign in.
+      </div>
+      <input
+        class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12"
+        placeholder="Email Address"
+      />
+      <input
+        class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12"
+        placeholder="Password"
+      />
+      <div
+        class="flex flex-row place-content-between"
+      >
+        <div>
+          Remember me
+        </div>
+        <div>
+          Forgot Password?
+        </div>
+      </div>
+      <button
+        class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white w-full"
+      >
+        Sign In
+      </button>
+    </div>
+    <div
+      class="w-1/2 place-content-center"
+    >
+      <img
+        alt="signInImage"
+        data-nimg="1"
+        decoding="async"
+        height="2000"
+        loading="lazy"
+        src="/_next/image?url=%2Fsign-in.png&w=3840&q=75"
+        srcset="/_next/image?url=%2Fsign-in.png&w=2048&q=75 1x, /_next/image?url=%2Fsign-in.png&w=3840&q=75 2x"
+        style="color: transparent;"
+        width="2000"
+      />
+    </div>
+  </div>
+</div>
+`;

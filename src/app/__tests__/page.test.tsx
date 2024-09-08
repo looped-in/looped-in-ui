@@ -1,15 +1,19 @@
 import { render, screen } from "@testing-library/react";
-import Home from "../page";
 import "@testing-library/jest-dom";
+import Homepage from "@/components/Homepage";
 
 describe("Page", () => {
-	it("renders a heading", () => {
-		render(<Home />);
-		expect(screen.getByText("Get started by editing")).toBeInTheDocument();
+	it("SHOULD match snapshot", () => {
+		const { container } = render(<Homepage />);
+		expect(container).toMatchSnapshot();
 	});
 
-	it("SHOULD match snapshot", () => {
-		const { container } = render(<Home />);
-		expect(container).toMatchSnapshot();
+	it("SHOULD renders correct heading", () => {
+		render(<Homepage />);
+		expect(
+			screen.getByText(
+				"Collaboration tools you'll love for the jobs you don't.",
+			),
+		).toBeInTheDocument();
 	});
 });
