@@ -36,19 +36,19 @@ exports[`Page SHOULD match snapshot 1`] = `
           </a>
           <a
             class="content-around hover:text-[#ff7338]"
-            href="/"
+            href="/our-team"
           >
             Our Team
           </a>
           <a
             class="content-around hover:text-[#ff7338]"
-            href="/"
+            href="/find-builder"
           >
             Find a builder
           </a>
           <a
             class="content-around hover:text-[#ff7338]"
-            href="/"
+            href="/get-in-touch"
           >
             Get in touch
           </a>

@@ -2,13 +2,16 @@ import Image from "next/image";
 import React from "react";
 import Button from "../Button";
 import Link from "next/link";
-import { redirectButton } from "@/app/actions/actions";
+
+const HEADER_LINKS = [
+	{ label: "About", href: "/" },
+	{ label: "How it works", href: "/how-it-work" },
+	{ label: "Our Team", href: "/our-team" },
+	{ label: "Find a builder", href: "/find-builder" },
+	{ label: "Get in touch", href: "/get-in-touch" }
+];
 
 const Header = () => {
-	const redirect = async () => {
-		redirectButton();
-	};
-
 	return (
 		<div className="p-16">
 			<div className="flex flex-row place-content-between">
@@ -16,37 +19,22 @@ const Header = () => {
 
 				{/* Menu */}
 				<div className="flex flex-row space-x-6 align-middle content-around text-sm font-semibold">
-					<Link href="/" className="content-around hover:text-[#ff7338]">
-						About
-					</Link>
-
-					<Link
-						href="/how-it-work"
-						className="content-around hover:text-[#ff7338]"
-					>
-						How it works
-					</Link>
-
-					<Link href="/" className="content-around hover:text-[#ff7338]">
-						Our Team
-					</Link>
-
-					<Link href="/" className="content-around hover:text-[#ff7338]">
-						Find a builder
-					</Link>
-
-					<Link href="/" className="content-around hover:text-[#ff7338]">
-						Get in touch
-					</Link>
+					{HEADER_LINKS.map(({ label, href }) => (
+						<Link
+							href={href}
+							key={href}
+							className="content-around hover:text-[#ff7338]"
+						>
+							{label}
+						</Link>
+					))}
 
 					<div className="content-around align-middle hover:text-[#ff7338]">
-						<Link href={"/sign-in"}>
+						<Link href="/sign-in">
 							<Button label="Sign in" />
 						</Link>
 					</div>
 				</div>
-
-				{/* <div className="content-around"></div> */}
 			</div>
 		</div>
 	);

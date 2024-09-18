@@ -28,7 +28,9 @@ const SignIn = () => {
 					<div>Forgot Password?</div>
 				</div>
 
-				<Button label="Sign In" className="w-full" />
+				<Link href="dashboard">
+					<Button label="Sign In" className="w-full" />
+				</Link>
 			</div>
 
 			<div className="w-1/2 place-content-center">

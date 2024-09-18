@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header SHOULD match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="p-16"
+  >
+    <div
+      class="flex flex-row place-content-between"
+    >
+      <img
+        alt="logo"
+        data-nimg="1"
+        decoding="async"
+        height="150"
+        loading="lazy"
+        src="/logo.svg"
+        style="color: transparent;"
+        width="150"
+      />
+      <div
+        class="flex flex-row space-x-6 align-middle content-around text-sm font-semibold"
+      >
+        <a
+          class="content-around hover:text-[#ff7338]"
+          href="/"
+        >
+          About
+        </a>
+        <a
+          class="content-around hover:text-[#ff7338]"
+          href="/how-it-work"
+        >
+          How it works
+        </a>
+        <a
+          class="content-around hover:text-[#ff7338]"
+          href="/our-team"
+        >
+          Our Team
+        </a>
+        <a
+          class="content-around hover:text-[#ff7338]"
+          href="/find-builder"
+        >
+          Find a builder
+        </a>
+        <a
+          class="content-around hover:text-[#ff7338]"
+          href="/get-in-touch"
+        >
+          Get in touch
+        </a>
+        <div
+          class="content-around align-middle hover:text-[#ff7338]"
+        >
+          <a
+            href="/sign-in"
+          >
+            <button
+              class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white"
+            >
+              Sign in
+            </button>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
