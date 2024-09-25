@@ -2,6 +2,7 @@ import Image from "next/image";
 import React from "react";
 import Button from "../Button";
 import Link from "next/link";
+import { PAGE_ROUTE } from '@/utils/constant';
 
 const HEADER_LINKS = [
 	{ label: "About", href: "/" },
@@ -30,7 +31,7 @@ const Header = () => {
 					))}
 
 					<div className="content-around align-middle hover:text-[#ff7338]">
-						<Link href="/sign-in">
+						<Link href={PAGE_ROUTE.SIGN_IN}>
 							<Button label="Sign in" />
 						</Link>
 					</div>

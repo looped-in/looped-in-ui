@@ -2,6 +2,8 @@
 import React from "react";
 import Button from "../Button";
 import Image from "next/image";
+import Link from 'next/link';
+import { PAGE_ROUTE } from '@/utils/constant';
 
 const TopBannerHomepage = () => {
 	return (
@@ -19,7 +21,9 @@ const TopBannerHomepage = () => {
 				</div>
 
 				<div className="text-sm flex flex-row ">
-					<Button label="Sign in" className="w-1/3" />
+					<Link href={PAGE_ROUTE.SIGN_IN} className='w-1/3'>
+						<Button label="Sign in" />
+					</Link>
 					<div className="text-center w-1/2 content-around">Find a Builder</div>
 				</div>
 			</div>

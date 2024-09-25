@@ -14,7 +14,7 @@ const Button = (props: IButtonProps) => {
 	return (
 		<button
 			className={cn(
-				"h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white",
+				"h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold",
 				props.className,
 			)}
 			type={props.type}

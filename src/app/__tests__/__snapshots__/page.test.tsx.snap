@@ -59,7 +59,7 @@ exports[`Page SHOULD match snapshot 1`] = `
               href="/sign-in"
             >
               <button
-                class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white"
+                class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
               >
                 Sign in
               </button>
@@ -87,11 +87,16 @@ exports[`Page SHOULD match snapshot 1`] = `
         <div
           class="text-sm flex flex-row "
         >
-          <button
-            class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white w-1/3"
+          <a
+            class="w-1/3"
+            href="/sign-in"
           >
-            Sign in
-          </button>
+            <button
+              class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
+            >
+              Sign in
+            </button>
+          </a>
           <div
             class="text-center w-1/2 content-around"
           >
@@ -150,7 +155,7 @@ exports[`Page SHOULD match snapshot 1`] = `
           Building or renovating? Let Loopedin help you find the right builder for your next big project. Browse to find your builder!
         </div>
         <button
-          class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white w-1/2"
+          class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold w-1/2"
         >
           Find a Builder
         </button>
@@ -171,7 +176,7 @@ exports[`Page SHOULD match snapshot 1`] = `
           class="w-1/2 space-y-6 p-4 place-content-center"
         >
           <button
-            class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white"
+            class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
           >
             Step 1
           </button>
@@ -224,7 +229,7 @@ exports[`Page SHOULD match snapshot 1`] = `
           class="w-1/2 space-y-6 p-4 place-content-center"
         >
           <button
-            class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white"
+            class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
           >
             Step 2
           </button>
@@ -247,7 +252,7 @@ exports[`Page SHOULD match snapshot 1`] = `
           class="w-1/2 space-y-6 p-8 place-content-center"
         >
           <button
-            class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white"
+            class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
           >
             Step 1
           </button>
@@ -310,7 +315,7 @@ exports[`Page SHOULD match snapshot 1`] = `
           placeholder="Enter email"
         />
         <button
-          class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white"
+          class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
         >
           Subcribe
         </button>
