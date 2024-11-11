@@ -69,30 +69,38 @@ exports[`SignIn page SHOULD render match snapshot 1`] = `
           <div
             class="space-y-2"
           >
-            <input
-              aria-describedby=":r0:-form-item-description"
-              aria-invalid="false"
-              class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12"
-              id=":r0:-form-item"
-              name="email"
-              placeholder="Email Address"
-              type="email"
-              value="false"
-            />
+            <div
+              class="w-full relative"
+            >
+              <input
+                aria-describedby=":r0:-form-item-description"
+                aria-invalid="false"
+                class="flex w-full bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700 rounded-xl border border-input h-12"
+                id=":r0:-form-item"
+                name="email"
+                placeholder="Email Address"
+                type="email"
+                value="false"
+              />
+            </div>
           </div>
           <div
             class="space-y-2"
           >
-            <input
-              aria-describedby=":r1:-form-item-description"
-              aria-invalid="false"
-              class="flex w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 h-12"
-              id=":r1:-form-item"
-              name="password"
-              placeholder="Password"
-              type="password"
-              value="false"
-            />
+            <div
+              class="w-full relative"
+            >
+              <input
+                aria-describedby=":r1:-form-item-description"
+                aria-invalid="false"
+                class="flex w-full bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-red-700 rounded-xl border border-input h-12"
+                id=":r1:-form-item"
+                name="password"
+                placeholder="Password"
+                type="password"
+                value="false"
+              />
+            </div>
           </div>
           <div
             class="flex flex-row place-content-between"
@@ -104,7 +112,7 @@ exports[`SignIn page SHOULD render match snapshot 1`] = `
                 aria-checked="false"
                 aria-describedby=":r2:-form-item-description"
                 aria-invalid="false"
-                class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-primary data-[state=checked]:text-primary-foreground"
+                class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-gradient-to-b data-[state=checked]:from-[#ffb945] data-[state=checked]:to-[#ff7338] data-[state=checked]:text-white"
                 data-state="unchecked"
                 id=":r2:-form-item"
                 role="checkbox"

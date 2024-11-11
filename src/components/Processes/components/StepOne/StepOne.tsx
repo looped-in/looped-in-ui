@@ -4,10 +4,9 @@ import React from "react"
 
 const StepOne = () => {
   return (
-    <div className="flex flex-row py-50">
+    <div className="flex flex-row py-24 pl-28 gap-40">
       <div className="w-1/2 space-y-6 p-4 place-content-center">
         <Button label="Step 1" />
-
         <div className="text-2xl font-semibold">Step One of The Process</div>
 
         <div className="text-sm">
@@ -21,8 +20,22 @@ const StepOne = () => {
         </div>
       </div>
 
-      <div className="w-1/2">
-        <Image src="/step-one.png" width={1000} height={1000} alt="step-1" />
+      <div className="w-1/2 relative">
+        <div className="bg-gradient-radial from-[#ffb945] to-[#ff7338] absolute w-full h-full rounded-full opacity-20 blur-3xl z-0" />
+        <div className="flex">
+          <Image
+            className="z-10"
+            src="/step-1.png"
+            width={1000}
+            height={1000}
+            alt="step-1"
+            sizes="100vw"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          />
+        </div>
       </div>
     </div>
   )

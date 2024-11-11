@@ -3,21 +3,25 @@
 exports[`Header SHOULD match snapshot 1`] = `
 <DocumentFragment>
   <div
-    class="p-16"
+    class="p-8"
   >
     <div
       class="flex flex-row place-content-between"
     >
-      <img
-        alt="logo"
-        data-nimg="1"
-        decoding="async"
-        height="150"
-        loading="lazy"
-        src="/logo.svg"
-        style="color: transparent;"
-        width="150"
-      />
+      <a
+        href="/"
+      >
+        <img
+          alt="logo"
+          data-nimg="1"
+          decoding="async"
+          height="150"
+          loading="lazy"
+          src="/logo.svg"
+          style="color: transparent;"
+          width="150"
+        />
+      </a>
       <div
         class="flex flex-row space-x-6 align-middle content-around text-sm font-semibold"
       >

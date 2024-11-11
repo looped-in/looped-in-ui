@@ -1,24 +1,16 @@
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import TopBannerHomepage from "@/components/TopBannerHomepage";
-import React from "react";
-import FindBuilder from "../FindBuilder";
-import Processes from "../Processes";
+import TopBannerHomepage from "@/components/TopBannerHomepage"
+import React from "react"
+import FindBuilder from "../FindBuilder"
+import Processes from "../Processes"
 
 const Homepage = () => {
-	return (
-		<div>
-			<Header />
+  return (
+    <div className="bg-white">
+      <TopBannerHomepage />
+      <FindBuilder />
+      <Processes />
+    </div>
+  )
+}
 
-			<TopBannerHomepage />
-
-			<FindBuilder />
-
-			<Processes />
-
-			<Footer />
-		</div>
-	);
-};
-
-export default Homepage;
+export default Homepage

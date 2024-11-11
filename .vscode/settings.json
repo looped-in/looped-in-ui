@@ -1,8 +1,10 @@
 {
   "cSpell.words": [
+    "clsx",
     "hookform",
     "Loopedin",
     "lucide",
     "tailwindcss"
-  ]
+  ],
+  "biome.enabled": false
 }

@@ -6,19 +6,19 @@ import { useRouter } from "next/navigation"
 import { signIn } from "@/app/api/users/actions"
 import { PAGE_ROUTE } from "@/utils/constant"
 import { ArrowLeft } from "lucide-react"
-import { Input } from "@/components/ui/input"
 import {
+  Input,
   Form,
   FormControl,
   FormField,
   FormItem,
   FormLabel,
   FormMessage,
-} from "@/components/ui/form"
+  Checkbox,
+} from "@/components/ui"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { type signInFormData, signInSchema } from "@/app/api/users/form-schema"
-import { Checkbox } from "@/components/ui"
 import { useState } from "react"
 
 const SignIn = () => {
@@ -88,7 +88,6 @@ const SignIn = () => {
               onChange={() => console.log("first")}
               className="flex flex-col gap-5"
             >
-              {/* <div className="flex flex-col gap-2"> */}
               <FormField
                 control={form.control}
                 name="email"
@@ -128,7 +127,6 @@ const SignIn = () => {
                   )
                 }}
               />
-              {/* </div> */}
 
               <div className="flex flex-row place-content-between">
                 <FormField
