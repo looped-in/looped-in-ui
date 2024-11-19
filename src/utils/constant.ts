@@ -2,20 +2,28 @@ export enum PAGE_ROUTE {
   HOMEPAGE = "/",
   SIGN_IN = "/sign-in",
   FORGOT_PASSWORD = "/forgot-password",
+  UPDATE_PASSWORD = "/update-password",
   FIND_BUILDER = "/find-builder",
 }
 
 export enum ADMIN_ROUTE {
-  DASHBOARD = "/dashboard",
-  MILESTONES = `${ADMIN_ROUTE.DASHBOARD}/milestones`,
-  PROGRESS_REPORTS = `${ADMIN_ROUTE.DASHBOARD}/progress-reports`,
-  DEFECTS = `${ADMIN_ROUTE.DASHBOARD}/defects`,
-  PROJECT_IMAGES = `${ADMIN_ROUTE.DASHBOARD}/project-images`,
+  ADMIN = "/admin",
+  MILESTONES = `${ADMIN_ROUTE.ADMIN}/milestones`,
+  PROGRESS_REPORTS = `${ADMIN_ROUTE.ADMIN}/progress-reports`,
+  DEFECTS = `${ADMIN_ROUTE.ADMIN}/defects`,
+  PROJECT_IMAGES = `${ADMIN_ROUTE.ADMIN}/project-images`,
 }
 
-export const ICON_SIZE = 20
+export enum ICON_SIZE {
+  LARGE = 24,
+  MEDIUM = 20,
+  SMALL = 16,
+}
 
-export enum COLOR {}
+export enum COLOR {
+  DARK_ORANGE = "#ff7338",
+  LIGHT_ORANGE = "#ffb945",
+}
 
 export const HEADER_LINKS = [
   { label: "About", href: PAGE_ROUTE.HOMEPAGE },

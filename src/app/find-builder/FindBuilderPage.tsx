@@ -1,5 +1,4 @@
 "use client"
-
 import Image from "next/image"
 import { FormProvider, useForm, useFormContext } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
@@ -22,10 +21,12 @@ import Button from "@/components/Button"
 import { AdvancedSearchForm } from "./components/AdvancedSearchForm"
 import { findBuilder } from "./action"
 import { HavePlansSelect } from "./components/HavePlanSelect"
+import { useRouter } from "next/navigation"
 
 export default function FindBuilderPage() {
   const [isShowAdvancedFilter, setIsShowAdvancedFilter] = useState(false)
   const [builders, setBuilders] = useState<null | []>()
+  const router = useRouter()
 
   const form = useForm<findBuilderFormData>({
     resolver: zodResolver(findBuilderSchema),
@@ -38,10 +39,10 @@ export default function FindBuilderPage() {
   })
   // const formData = form.getValues()
   // form.formState.errors
-  // console.log(">>>> ~ FindBuilderPage ~ formData:", formData)
 
   const onSubmit = (data: findBuilderFormData) => {
     handleSearch(data)
+    router.push("/find-builder/results")
   }
 
   const handleSearch = useCallback(async (formData: findBuilderFormData) => {

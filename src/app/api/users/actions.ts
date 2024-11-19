@@ -5,5 +5,5 @@ import { redirect } from "next/navigation"
 import type { signInFormData } from "./form-schema"
 
 export async function signIn(formData: signInFormData) {
-  redirect(ADMIN_ROUTE.DASHBOARD)
+  redirect(ADMIN_ROUTE.ADMIN)
 }

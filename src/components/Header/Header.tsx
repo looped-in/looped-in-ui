@@ -25,8 +25,8 @@ const Header = () => {
               href={href}
               key={href}
               className={cn(
-                "content-around hover:text-[#ff7338]",
-                pathName === href && "text-[#ff7338]"
+                "content-around hover:text-[#ff7338] text-black",
+                pathName === href && "text-[#ff7338] "
               )}
             >
               {label}

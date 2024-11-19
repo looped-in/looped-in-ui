@@ -11,10 +11,10 @@ import ViewLogs from "@/icons/ViewLogs.png"
 import SignOut from "@/icons/SignOut.png"
 import { usePathname } from "next/navigation"
 import { cn } from "@/utils"
-import { ADMIN_ROUTE, ICON_SIZE, PAGE_ROUTE } from "@/utils/constant"
+import { ADMIN_ROUTE, ICON_SIZE } from "@/utils/constant"
 
 const NAVIGATION_TAB_ITEMS = [
-  { label: "Dashboard", href: ADMIN_ROUTE.DASHBOARD, icon: DashboardIcon },
+  { label: "Dashboard", href: ADMIN_ROUTE.ADMIN, icon: DashboardIcon },
   { label: "Milestones", href: ADMIN_ROUTE.MILESTONES, icon: MilestonesIcon },
   {
     label: "Progress Reports",
@@ -59,8 +59,8 @@ const NavigationTab = () => {
                 <Image
                   src={icon}
                   alt={label}
-                  width={ICON_SIZE}
-                  height={ICON_SIZE}
+                  width={ICON_SIZE.MEDIUM}
+                  height={ICON_SIZE.MEDIUM}
                 />
                 <div className="text-white">{label}</div>
               </Link>
@@ -73,8 +73,8 @@ const NavigationTab = () => {
           <Image
             src={SignOut}
             alt="logout"
-            width={ICON_SIZE}
-            height={ICON_SIZE}
+            width={ICON_SIZE.MEDIUM}
+            height={ICON_SIZE.MEDIUM}
           />
           <div>Sign out</div>
         </Link>
