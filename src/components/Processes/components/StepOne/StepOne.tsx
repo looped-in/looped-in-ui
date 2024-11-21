@@ -21,7 +21,7 @@ const StepOne = () => {
       </div>
 
       <div className="w-1/2 relative">
-        <div className="bg-gradient-radial from-[#ffb945] to-[#ff7338] absolute w-full h-full rounded-full opacity-20 blur-3xl z-0" />
+        <div className="bg-gradient-radial from-secondary to-primary absolute w-full h-full rounded-full opacity-20 blur-3xl z-0" />
         <div className="flex">
           <Image
             className="z-10"

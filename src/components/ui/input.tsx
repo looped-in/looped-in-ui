@@ -34,7 +34,7 @@ const Input = React.forwardRef<HTMLInputElement, IInputProps>(
             className={cn(
               "absolute left-1.5 top-1/2 transform -translate-y-1/2",
               fillIcon &&
-                "p-3 bg-gradient-to-b from-[#ffb945] to-[#ff7338] rounded-xl"
+                "p-3 bg-gradient-to-b from-secondary to-primary rounded-xl"
             )}
           >
             <StartIcon size={18} className="text-muted-foreground" />
@@ -51,7 +51,7 @@ const Input = React.forwardRef<HTMLInputElement, IInputProps>(
           ref={ref}
         />
 
-        {/* <div className="rounded-full p-0.5 focus-within:bg-gradient-to-b focus-within:from-[#ffb945] focus-within:to-[#ff7338]">
+        {/* <div className="rounded-full p-0.5 focus-within:bg-gradient-to-b focus-within:from-secondary focus-within:to-[#ff7338]">
           <input
             className={cn(
               "flex h-10 w-full bg-background px-6 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50 focus-visible:outline-none rounded-full border border-input focus-visible:border-none",
@@ -69,7 +69,7 @@ const Input = React.forwardRef<HTMLInputElement, IInputProps>(
             className={cn(
               "absolute right-6 top-1/2 transform -translate-y-1/2",
               fillIcon &&
-                "p-3 bg-gradient-to-b from-[#ffb945] to-[#ff7338] rounded-lg"
+                "p-3 bg-gradient-to-b from-secondary to-primary rounded-lg"
             )}
           >
             <EndIcon

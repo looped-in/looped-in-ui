@@ -17,7 +17,7 @@ const FindBuilder = () => {
       </div>
 
       <div className="w-3/6 bg-zinc-800 content-around p-8 space-y-6">
-        <div className="text-transparent bg-clip-text bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-4xl font-semibold">
+        <div className="text-transparent bg-clip-text bg-gradient-to-b from-secondary to-primary text-4xl font-semibold">
           Find a builder for <br />
           your next job!
         </div>

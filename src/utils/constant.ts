@@ -25,7 +25,7 @@ export enum COLOR {
   LIGHT_ORANGE = "#ffb945",
 }
 
-export const HEADER_LINKS = [
+export const HEADER_NAVIGATION_ITEMS = [
   { label: "About", href: PAGE_ROUTE.HOMEPAGE },
   { label: "How it works", href: "/how-it-work" },
   { label: "Our Team", href: "/our-team" },

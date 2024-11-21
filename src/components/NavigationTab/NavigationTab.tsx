@@ -52,7 +52,7 @@ const NavigationTab = () => {
                 className={cn(
                   "flex flex-row space-x-3",
                   isCurrentRoute
-                    ? "bg-slate-100 rounded-md px-3 py-2 bg-gradient-to-b from-[#ffb945] to-[#ff7338] font-semibold"
+                    ? "bg-slate-100 rounded-md px-3 py-2 bg-gradient-to-b from-secondary to-primary font-semibold"
                     : "pl-3"
                 )}
               >

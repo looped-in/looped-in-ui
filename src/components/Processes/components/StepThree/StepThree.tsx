@@ -20,7 +20,7 @@ const StepThree = () => {
       </div>
 
       <div className="w-1/2 relative">
-        <div className="bg-gradient-radial from-[#ffb945] to-[#ff7338] absolute w-full h-full right-0 bottom-0 rounded-full opacity-20 blur-3xl" />
+        <div className="bg-gradient-radial from-secondary to-primary absolute w-full h-full right-0 bottom-0 rounded-full opacity-20 blur-3xl" />
         <div className="flex">
           <div className="z-10">
             <Image src="/step-3.1.png" width={317} height={597} alt="step-3" />

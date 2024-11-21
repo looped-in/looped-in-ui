@@ -26,43 +26,43 @@ exports[`Header SHOULD match snapshot 1`] = `
         class="flex flex-row space-x-6 align-middle content-around text-sm font-semibold"
       >
         <a
-          class="content-around hover:text-[#ff7338] text-black"
+          class="content-around hover:text-primary text-black"
           href="/"
         >
           About
         </a>
         <a
-          class="content-around hover:text-[#ff7338] text-black"
+          class="content-around hover:text-primary text-black"
           href="/how-it-work"
         >
           How it works
         </a>
         <a
-          class="content-around hover:text-[#ff7338] text-black"
+          class="content-around hover:text-primary text-black"
           href="/our-team"
         >
           Our Team
         </a>
         <a
-          class="content-around hover:text-[#ff7338] text-black"
+          class="content-around hover:text-primary text-black"
           href="/find-builder"
         >
           Find a builder
         </a>
         <a
-          class="content-around hover:text-[#ff7338] text-black"
+          class="content-around hover:text-primary text-black"
           href="/get-in-touch"
         >
           Get in touch
         </a>
         <div
-          class="content-around align-middle hover:text-[#ff7338]"
+          class="content-around align-middle hover:text-primary"
         >
           <a
             href="/sign-in"
           >
             <button
-              class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold"
+              class="h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-secondary to-primary text-white font-bold"
             >
               Sign in
             </button>

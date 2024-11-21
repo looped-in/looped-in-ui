@@ -8,7 +8,7 @@ import { Search } from "lucide-react"
 const TopBannerHomepage = () => {
   return (
     <div className=" relative flex flex-row px-28 pb-28 space-x-4">
-      <div className="bg-gradient-to-tl from-[#ffb945] to-[#ff7338] absolute bottom-0 right-0 w-1/2 h-full rounded-full opacity-30 blur-3xl"></div>
+      <div className="bg-gradient-to-tl from-secondary to-primary absolute bottom-0 right-0 w-1/2 h-full rounded-full opacity-30 blur-3xl"></div>
       <div className="w-1/2 space-y-6 flex flex-col justify-center z-10">
         <div className="text-4xl font-medium">
           {"Collaboration tools you'll love for the jobs you don't."}

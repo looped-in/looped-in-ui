@@ -6,7 +6,7 @@ const StepTwo = () => {
   return (
     <div className="flex flex-row py-24 pl-28 gap-40">
       <div className="w-1/2 relative">
-        <div className="bg-gradient-radial from-[#ffb945] to-[#ff7338] absolute w-2/3 h-2/3 right-0 bottom-0 rounded-full opacity-20 blur-3xl -z-0" />
+        <div className="bg-gradient-radial from-secondary to-primary absolute w-2/3 h-2/3 right-0 bottom-0 rounded-full opacity-20 blur-3xl -z-0" />
         <div className="flex flex-row-reverse">
           <Image
             src="/step-2.1.png"

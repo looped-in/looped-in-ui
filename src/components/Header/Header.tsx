@@ -2,7 +2,7 @@ import Image from "next/image"
 import React from "react"
 import Button from "../Button"
 import Link from "next/link"
-import { HEADER_LINKS, PAGE_ROUTE } from "@/utils/constant"
+import { HEADER_NAVIGATION_ITEMS, PAGE_ROUTE } from "@/utils/constant"
 import { usePathname } from "next/navigation"
 import { cn } from "@/utils"
 
@@ -20,20 +20,20 @@ const Header = () => {
 
         {/* Menu */}
         <div className="flex flex-row space-x-6 align-middle content-around text-sm font-semibold">
-          {HEADER_LINKS.map(({ label, href }) => (
+          {HEADER_NAVIGATION_ITEMS.map(({ label, href }) => (
             <Link
               href={href}
               key={href}
               className={cn(
-                "content-around hover:text-[#ff7338] text-black",
-                pathName === href && "text-[#ff7338] "
+                "content-around hover:text-primary text-black",
+                pathName === href && "text-primary "
               )}
             >
               {label}
             </Link>
           ))}
 
-          <div className="content-around align-middle hover:text-[#ff7338]">
+          <div className="content-around align-middle hover:text-primary">
             <Link href={PAGE_ROUTE.SIGN_IN}>
               <Button label="Sign in" />
             </Link>

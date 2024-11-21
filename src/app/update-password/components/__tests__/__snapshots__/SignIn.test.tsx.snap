@@ -112,7 +112,7 @@ exports[`SignIn page SHOULD render match snapshot 1`] = `
                 aria-checked="false"
                 aria-describedby=":r2:-form-item-description"
                 aria-invalid="false"
-                class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-gradient-to-b data-[state=checked]:from-[#ffb945] data-[state=checked]:to-[#ff7338] data-[state=checked]:text-white"
+                class="peer h-4 w-4 shrink-0 rounded-sm border border-primary ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-gradient-to-b data-[state=checked]:from-secondary data-[state=checked]:to-primary data-[state=checked]:text-white"
                 data-state="unchecked"
                 id=":r2:-form-item"
                 role="checkbox"
@@ -140,7 +140,7 @@ exports[`SignIn page SHOULD render match snapshot 1`] = `
             </div>
           </div>
           <button
-            class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-[#ffb945] to-[#ff7338] text-white font-bold w-full text-xs"
+            class="h-10 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-secondary to-primary text-white font-bold w-full text-xs"
             type="submit"
           >
             Sign In
