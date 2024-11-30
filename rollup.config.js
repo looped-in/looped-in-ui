@@ -1,11 +1,10 @@
-/* eslint-disable import/no-anonymous-default-export */
 import resolve from "@rollup/plugin-node-resolve"
 import commonjs from "@rollup/plugin-commonjs"
 import typescript from "@rollup/plugin-typescript"
-import dts from "rollup-plugin-dts"
-import terser from "@rollup/plugin-terser"
-import peerDepsExternal from "rollup-plugin-peer-deps-external"
+import { terser } from "rollup-plugin-terser"
+import external from "rollup-plugin-peer-deps-external"
 import postcss from "rollup-plugin-postcss"
+import dts from "rollup-plugin-dts"
 
 const packageJson = require("./package.json")
 
@@ -17,6 +16,7 @@ export default [
         file: packageJson.main,
         format: "cjs",
         sourcemap: true,
+        name: "react-ts-lib",
       },
       {
         file: packageJson.module,
@@ -25,19 +25,18 @@ export default [
       },
     ],
     plugins: [
-      peerDepsExternal(),
+      external(),
       resolve(),
       commonjs(),
       typescript({ tsconfig: "./tsconfig.json" }),
-      terser(),
       postcss(),
+      terser(),
     ],
-    external: ["react", "react-dom"],
   },
   {
     input: "src/index.ts",
-    output: [{ file: "dist/types.d.ts", format: "es" }],
-    plugins: [dts.default()],
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
     external: [/\.css$/],
+    plugins: [dts.default()],
   },
 ]

@@ -1,6 +1,7 @@
-import { cn } from "../../../utils"
+import React from "react"
+import { cn } from "../../utils"
 
-const Input = (props: any) => {
+const Input: React.FC = (props: any) => {
   return (
     <input
       className={cn(
