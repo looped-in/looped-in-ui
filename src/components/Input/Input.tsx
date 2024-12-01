@@ -1,4 +1,4 @@
-import { cn } from "../../../utils"
+import { cn } from "../../utils"
 
 const Input = (props: any) => {
   return (
@@ -11,7 +11,7 @@ const Input = (props: any) => {
       value={props.value}
       onChange={props.onChange}
       disabled={props.disabled}
-    ></input>
+    />
   )
 }
 

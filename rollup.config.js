@@ -1,13 +1,9 @@
-/* eslint-disable import/no-anonymous-default-export */
 import resolve from "@rollup/plugin-node-resolve"
-import commonjs from "@rollup/plugin-commonjs"
 import typescript from "@rollup/plugin-typescript"
+import commonjs from "@rollup/plugin-commonjs"
 import dts from "rollup-plugin-dts"
-import terser from "@rollup/plugin-terser"
-import peerDepsExternal from "rollup-plugin-peer-deps-external"
 import postcss from "rollup-plugin-postcss"
-
-const packageJson = require("./package.json")
+import packageJson from "./package.json" assert { type: "json" }
 
 export default [
   {
@@ -25,18 +21,22 @@ export default [
       },
     ],
     plugins: [
-      peerDepsExternal(),
-      resolve(),
+      resolve({
+        extensions: [".js", ".jsx", ".ts", ".tsx"],
+        skip: ["react", "react-dom"],
+      }),
       commonjs(),
-      typescript({ tsconfig: "./tsconfig.json" }),
-      terser(),
-      postcss(),
+      typescript({
+        tsconfig: "./tsconfig.json",
+        exclude: ["**/*.test.tsx", "**/*.test.ts", "**/*.stories.ts"],
+      }),
+      postcss({ extensions: [".css"], inject: true, extract: false }),
     ],
-    external: ["react", "react-dom"],
+    external: ["react", "react-dom", "react/jsx-runtime"],
   },
   {
-    input: "src/index.ts",
-    output: [{ file: "dist/types.d.ts", format: "es" }],
+    input: "dist/esm/types/index.d.ts",
+    output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts.default()],
     external: [/\.css$/],
   },
