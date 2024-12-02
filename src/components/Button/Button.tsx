@@ -1,6 +1,6 @@
-import type React from "react"
+import { cn } from "../utils"
 import { IButtonProps } from "./types"
-import { cn } from "../../utils"
+import React from "react"
 
 const Button: React.FC<IButtonProps> = (props) => {
   return (
