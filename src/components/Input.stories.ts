@@ -1,5 +1,5 @@
 import { Meta, StoryObj } from "@storybook/react/*"
-import Input from "../components/Input/Input"
+import Input from "./Input/Input"
 
 const meta = {
   title: "Example/Input",

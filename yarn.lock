@@ -1848,10 +1848,10 @@
     smob "^1.0.0"
     terser "^5.17.4"
 
-"@rollup/plugin-typescript@^12.1.1":
-  version "12.1.1"
-  resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-12.1.1.tgz#008d16b8283a422650c463f99ae0c610cf6c9727"
-  integrity sha512-t7O653DpfB5MbFrqPe/VcKFFkvRuFNp9qId3xq4Eth5xlyymzxNpye2z8Hrl0RIMuXTSr5GGcFpkdlMeacUiFQ==
+"@rollup/plugin-typescript@^11.1.6":
+  version "11.1.6"
+  resolved "https://registry.yarnpkg.com/@rollup/plugin-typescript/-/plugin-typescript-11.1.6.tgz#724237d5ec12609ec01429f619d2a3e7d4d1b22b"
+  integrity sha512-R92yOmIACgYdJ7dJ97p4K69I8gg6IEHt8M7dUBxN3W6nrO8uUxX5ixl0yU/N3aZTi8WhPuICvOHXQvF6FaykAA==
   dependencies:
     "@rollup/pluginutils" "^5.1.0"
     resolve "^1.22.1"
@@ -2097,6 +2097,13 @@
     "@storybook/global" "^5.0.0"
     ts-dedent "^2.0.0"
 
+"@storybook/addon-styling-webpack@^1.0.1":
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/@storybook/addon-styling-webpack/-/addon-styling-webpack-1.0.1.tgz#660ee002ec249f6e32dd2784abfa50f59ef97951"
+  integrity sha512-5n+SXPfMTc4m7sWaJWPWjoHYWc6/B111M2Ia55toQ3GV4ON4vVlTgH9FX+EgCkDticElj99HLTMDJkHRj2yvkg==
+  dependencies:
+    "@storybook/node-logger" "^8.0.0-alpha.10"
+
 "@storybook/addon-toolbars@8.4.6":
   version "8.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/addon-toolbars/-/addon-toolbars-8.4.6.tgz#1ae32cda6c01d7052ced339681632921b91641d9"
@@ -2223,6 +2230,11 @@
   version "8.4.6"
   resolved "https://registry.yarnpkg.com/@storybook/manager-api/-/manager-api-8.4.6.tgz#844a8b71de7eae44998a83b96666a05e6e49156c"
   integrity sha512-TsXlQ5m5rTl2KNT9icPFyy822AqXrx1QplZBt/L7cFn7SpqQKDeSta21FH7MG0piAvzOweXebVSqKngJ6cCWWQ==
+
+"@storybook/node-logger@^8.0.0-alpha.10":
+  version "8.4.6"
+  resolved "https://registry.yarnpkg.com/@storybook/node-logger/-/node-logger-8.4.6.tgz#04f3be51a21c4415cfe4ce496a2126f7e35b1b2d"
+  integrity sha512-MC2UTE+TmlJ7E3Oh2IzVfJLmitbvVgqHLfULWHi9UdvzUvDO6p3p44t+C3v7jRMy8UETtkbrtbUEYPR17gzFpA==
 
 "@storybook/preset-react-webpack@8.4.6":
   version "8.4.6"
