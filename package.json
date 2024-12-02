@@ -8,7 +8,7 @@
     "dist"
   ],
   "scripts": {
-    "rollup": "rollup -c",
+    "rollup": "rimraf dist && rollup -c",
     "rollup:watch": "rollup -c -w",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
