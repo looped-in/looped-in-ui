@@ -1,19 +1,20 @@
-import type React from "react"
+import { cn } from "../utils"
 import { IButtonProps } from "./types"
-import { cn } from "../../utils"
+import React from "react"
 
 const Button: React.FC<IButtonProps> = (props) => {
+  const { label, className, disabled, type } = props
   return (
     <button
       className={cn(
         "h-10 w-32 rounded-tl-lg rounded-tr-lg rounded-br-lg bg-gradient-to-b from-secondary to-primary text-white font-bold",
-        props.className
+        className
       )}
-      type={props.type}
+      type={type}
       onClick={props?.onClick}
-      disabled={props.disabled}
+      disabled={disabled}
     >
-      {props.label}
+      {label}
     </button>
   )
 }

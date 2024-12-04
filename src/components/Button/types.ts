@@ -1,5 +1,4 @@
 export interface IButtonProps {
-  styles?: string
   disabled?: boolean
   label: string
   onClick?: () => void

@@ -1,22 +1,35 @@
 {
   "name": "looped-in-ui",
-  "version": "0.0.4",
+  "version": "0.0.7",
   "main": "dist/cjs/index.js",
   "module": "dist/esm/index.js",
   "types": "dist/index.d.ts",
-  "author": "looped-in",
-  "license": "ISC",
   "files": [
     "dist"
   ],
   "scripts": {
-    "build": "react-scripts build",
-    "rollup": "rollup -c --bundleConfigAsCjs",
-    "rollup:watch": "rollup -c -w"
+    "rollup": "rimraf dist && rollup -c",
+    "rollup:watch": "rollup -c -w",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
+  },
+  "babel": {
+    "sourceType": "unambiguous",
+    "presets": [
+      "@babel/preset-env",
+      "@babel/preset-typescript",
+      [
+        "@babel/preset-react",
+        {
+          "runtime": "automatic"
+        }
+      ]
+    ]
   },
   "dependencies": {
     "@radix-ui/react-slot": "^1.1.0",
     "clsx": "^2.1.1",
+    "lucide-react": "^0.462.0",
     "react-scripts": "5.0.1",
     "tailwind-merge": "^2.5.5",
     "typescript": "^4.9.5",
@@ -27,12 +40,24 @@
     "@babel/preset-env": "^7.23.6",
     "@babel/preset-react": "^7.23.3",
     "@babel/preset-typescript": "^7.23.3",
+    "@chromatic-com/storybook": "^3.2.2",
     "@rollup/plugin-babel": "^6.0.4",
     "@rollup/plugin-commonjs": "^28.0.1",
     "@rollup/plugin-node-resolve": "^15.3.0",
     "@rollup/plugin-replace": "^6.0.1",
     "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^12.1.1",
+    "@rollup/plugin-typescript": "^11.1.6",
+    "@storybook/addon-essentials": "^8.4.6",
+    "@storybook/addon-interactions": "^8.4.6",
+    "@storybook/addon-onboarding": "^8.4.6",
+    "@storybook/addon-postcss": "^2.0.0",
+    "@storybook/addon-styling-webpack": "^1.0.1",
+    "@storybook/addon-themes": "^8.4.6",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.4.6",
+    "@storybook/react": "^8.4.6",
+    "@storybook/react-webpack5": "^8.4.6",
+    "@storybook/test": "^8.4.6",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -40,10 +65,14 @@
     "@types/node": "^16.18.120",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
+    "eslint-plugin-storybook": "^0.11.1",
     "rollup": "^4.27.4",
     "rollup-plugin-dts": "^6.1.1",
     "rollup-plugin-peer-deps-external": "^2.2.4",
     "rollup-plugin-postcss": "^4.0.2",
+    "storybook": "^8.4.6",
+    "tailwindcss": "^3.4.15",
+    "tailwindcss-animate": "^1.0.7",
     "tslib": "^2.6.2"
   },
   "peerDependencies": {
@@ -53,7 +82,8 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
+      "react-app/jest",
+      "plugin:storybook/recommended"
     ]
   },
   "browserslist": {
